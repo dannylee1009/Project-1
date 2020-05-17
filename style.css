@@ -1,0 +1,203 @@
+#nav-elements {
+    padding-left: 2em;
+}
+#logo {
+    font-family: 'Noto Sans KR', sans-serif ;
+    font-weight: bold;
+    font-size: 3em;
+    padding-left: 3px;
+    color: whitesmoke;
+
+}
+.navbar {
+    background-color: black;
+}
+#accent {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 3em;
+    color: firebrick;
+    
+}
+
+span{
+    margin-left:105px;
+}
+
+
+nav {
+    height: 5em;
+    position: fixed;
+  ;
+}
+
+.navbar-link {
+    color: whitesmoke;
+}
+.control {
+    padding-top: 20px;
+}
+.eventdate {
+    padding-top: 20px;
+    padding-right: 5px;
+}
+.control {
+    width: 30em;
+    margin-left: 8em;
+}
+
+/* body styling */
+
+#date-local-bar {
+    padding-top: 5em;
+    margin-bottom: -3em;
+    background-color: black;
+
+}
+#date {
+    text-align: center ;
+    ;
+    
+    text-align: right ;
+    margin-left: 4em;
+}
+#locationEl {
+    position: relative;
+    text-align: left ;
+}
+
+body {
+    background-color: black;
+}
+
+
+article {
+    border: 1px solid rgb(104, 104, 104);
+   
+
+}
+
+.title{
+    color: rgb(104, 104, 104);
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: larger;
+    
+}
+.subtitle {
+    font-size: medium;
+}
+.hero {
+    border-bottom: 1px solid rgb(104, 104, 104);
+    margin-top: 3em;
+}
+
+.hero-body {
+    padding: 1em 0 1em 0;
+
+}
+
+.hideMe {
+    display: none;
+}
+@media screen and (max-width:360px){
+    .navbar-brand{ 
+        min-height: 7.25em;
+    }
+    .control{
+        padding-top: 0px;
+    }
+    .hero-body {padding: 3em 0 3em 0;
+    }
+}
+
+
+
+/* marquee styling and functionality */
+.marquee {
+    height: 50px;
+    overflow: hidden;
+    position: relative;
+    color: whitesmoke;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 2em;
+    white-space: nowrap;
+    
+    
+}
+
+.marquee p {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    line-height: 50px;
+    text-align: center;
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    -moz-animation: scroll-left 3s linear infinite;
+    -webkit-animation: scroll-left 3s linear infinite;
+    animation: scroll-left 40s linear infinite;
+}
+
+
+
+@-moz-keyframes scroll-left {
+    0% {
+        -moz-transform: translateX(100%);
+    }
+    100% {
+        -moz-transform: translateX(-100%);
+    }
+}
+
+@-webkit-keyframes scroll-left {
+    0% {
+        -webkit-transform: translateX(100%);
+    }
+    100% {
+        -webkit-transform: translateX(-100%);
+    }
+}
+
+@keyframes scroll-left {
+    0% {
+        -moz-transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+    }
+    100% {
+        -moz-transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+    }
+}
+
+.footer {
+    background-color: hsl(0, 0%, 21%);
+    color: whitesmoke;
+    border-top: solid 1px rgb(104, 104, 104);
+    margin-top: 6em;
+}
+
+/* media queries */
+
+@media all and (max-width: 1023px) {
+    #search-field {margin-left: -8em;
+    }
+
+}
+
+@media all and (max-width: 768px) {
+    #date-local-bar{ 
+        margin-left: -31em;
+    }
+    #locationEl{ 
+        max-width: 15em;
+
+    }
+    #date{
+        text-align: left;
+        margin-left: 31em;
+        max-width: 12em;
+    }
+}
